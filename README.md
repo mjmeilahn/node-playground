@@ -1,5 +1,5 @@
 # Node Playground
-Repo for playing around with core Node packages - Buffer, Crypto, FS, EventEmitter, etc.
+Repo for playing around with core Node packages - Buffer, Crypto, File System, EventEmitter, etc.
 
 ## Version
 Node v10+
@@ -9,3 +9,5 @@ Node v10+
 2. Util Inherits vs. ES6 Classes
 
 3. Buffer
+
+4. File System
