@@ -28,19 +28,15 @@ readable.on('data', chunk => {
         WITH PIPES        
 *************************/
 
-const gzip = zlib.createGzip();
-
-const read = fs.createReadStream(__dirname + '/ipsum.txt');
-
-const write = fs.createWriteStream(__dirname + '/ipsum-copy.txt');
-
-const compressed = fs.createWriteStream(__dirname + '/ipsum.txt.gz');
-
 
 // WE DON'T KNOW THE INCOMING SIZE TO BE READ
 // PIPES BREAK UP DATA INTO CHUNKS
+const read = fs.createReadStream(__dirname + '/ipsum.txt');
+const write = fs.createWriteStream(__dirname + '/ipsum-copy.txt');
 read.pipe(write);
 
 // FIRST WE ZIP CONTENTS FROM READABLE STREAM...
 // THEN WE WRITE ZIPPED CONTENTS TO WRITABLE STREAM
+const gzip = zlib.createGzip();
+const compressed = fs.createWriteStream(__dirname + '/ipsum.txt.gz');
 read.pipe(gzip).pipe(compressed);
