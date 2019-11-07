@@ -1,10 +1,10 @@
 # Node Playground
-Repo for playing around with core Node packages - Buffer, Crypto, File System, EventEmitter, Streams, etc.
+Repo for playing around with Node ecosystem.
 
 ## Version
 Node v10+
 
-## Packages
+## Projects
 1. EventEmitter
 
 2. Util Inherits vs. ES6 Classes
@@ -14,3 +14,5 @@ Node v10+
 4. File System
 
 5. Streams - Readable / Writeable
+
+6. IP Address
