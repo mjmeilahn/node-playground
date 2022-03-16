@@ -16,3 +16,5 @@ Node v10+
 5. Streams - Readable / Writeable
 
 6. IP Address
+
+7. SHA-256
