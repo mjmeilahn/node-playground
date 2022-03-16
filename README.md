@@ -18,3 +18,5 @@ Node v10+
 6. IP Address
 
 7. SHA-256
+
+8. Ping Remote Server w/ Response
